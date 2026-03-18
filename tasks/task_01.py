@@ -10,8 +10,8 @@ def topkfrequent(numbers,k):
 
     items = []
 
-    for num in count:
-        items.append([num, count[num]])
+    for numbers in count:
+        items.append([numbers, count[numbers]])
 
     items.sort(key=lambda a: (-a[1], a[0]))
 
