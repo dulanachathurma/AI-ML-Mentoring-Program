@@ -1,4 +1,4 @@
-def topkfrequent(numbers, k):
+def topkfrequent(numbers,k):
     count = {}
     for n in numbers:
         if n not in count:
@@ -8,7 +8,7 @@ def topkfrequent(numbers, k):
 
     items = []
     for numbers in count:
-        items.append([numbers, count[numbers]])
+        items.append([numbers,count[numbers]])
 
     items.sort(key=lambda a: (-a[1], a[0]))
 
