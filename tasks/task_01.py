@@ -1,26 +1,28 @@
 def topkfrequent(numbers,k):
 
-    count = {}
+count = {}
 
-    for n in numbers:
-        if n not in count:
-            count[n] = 1
-        else:
-            count[n] = count[n] + 1
+for n in numbers:
+        
+if n not in count:
+ count[n] = 1
+    
+else:
+count[n] = count[n] + 1
 
-    items = []
+items = []
 
-    for numbers in count:
-        items.append([numbers, count[numbers]])
+for numbers in count:
+items.append([numbers, count[numbers]])
 
-    items.sort(key=lambda a: (-a[1], a[0]))
+items.sort(key=lambda a: (-a[1], a[0]))
 
-    result = []
+result = []
 
-    for i in range(k):
-        result.append(items[i][0])
+for i in range(k):
+result.append(items[i][0])
 
-    return result
+return result
 
 numbers = [1, 1, 1, 2, 2, 3]
 k = 2
